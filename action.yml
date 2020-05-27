@@ -1,0 +1,8 @@
+name: 'Set version'
+description: 'Set version derived from application.yml'
+outputs:
+  version:
+    description: 'The resulting version'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

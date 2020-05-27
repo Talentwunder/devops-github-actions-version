@@ -1,0 +1,18 @@
+{
+  "name": "devops-github-actions-version",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Talentwunder/devops-github-actions-version.git",
+  "author": "Lukas <meusel.lukas@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "js-yaml": "^3.14.0"
+  },
+  "scripts": {
+    "package": "ncc build index.js -o dist"
+  }
+}

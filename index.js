@@ -5,7 +5,9 @@ const yaml = require('js-yaml');
 
 
 function getVersion() {
-    const file = fs.readFileSync(path.resolve('src/main/resources/application.yml', 'utf8'));
+    const pathToFile = path.resolve('src/main/resources/application.yml')
+    console.log('Const path to file: ', pathToFile);
+    const file = fs.readFileSync(pathToFile, 'utf8');
     const doc = yaml.safeLoad(file);
 
     if (!doc.version) {
